@@ -1,0 +1,45 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Local Jupyter configuration
+.ipython/
+.jupyter/
+.jupyter-runtime/
+
+# Dataset - do not upload
+data/
+*.csv
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Personal learning notes
+self_reference_notes.txt
