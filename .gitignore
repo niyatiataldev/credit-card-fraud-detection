@@ -43,3 +43,6 @@ desktop.ini
 
 # Personal learning notes
 self_reference_notes.txt
+
+# Local Streamlit configuration and credentials
+/.streamlit/

@@ -1,4 +1,8 @@
 # Credit Card Fraud Detection
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
+![Dashboard](https://img.shields.io/badge/Dashboard-Streamlit-red)
+![Project Status](https://img.shields.io/badge/Status-In-progress-orange)
 
 A machine learning project that explores credit card transaction data, addresses class imbalance using SMOTE, trains classification models, and evaluates a Random Forest fraud detection model.
 
@@ -35,6 +39,16 @@ The target column is:
 - `1` — Fraudulent transaction
 
 The dataset is not included in this repository because of its size.
+
+## Dataset Source
+
+The dataset used in this project is the Credit Card Fraud Detection
+dataset hosted on Kaggle.
+
+Dataset: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+The dataset is not included in this repository. Download the CSV file
+and place it at `data/creditcard.csv`.
 
 ### Dataset Setup
 
@@ -98,6 +112,17 @@ The model correctly identified 73 fraudulent transactions, missed 22 fraudulent 
 
 Because the dataset is highly imbalanced, fraud-specific precision and recall are more informative than overall accuracy alone.
 
+### Interpretation
+
+- True Negatives: 56,642 normal transactions correctly identified.
+- False Positives: 9 normal transactions incorrectly flagged as fraud.
+- False Negatives: 22 fraudulent transactions missed by the model.
+- True Positives: 73 fraudulent transactions correctly detected.
+
+The model detected approximately 76.84% of fraud cases in the test set.
+However, it missed 22 fraudulent transactions, which remains an
+important limitation.
+
 ## Dashboard
 
 The Streamlit dashboard provides:
@@ -132,7 +157,7 @@ credit-card-fraud-detection/
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/niyatiataldev/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 ```
 
@@ -188,6 +213,19 @@ python predict_transaction.py
 ```bash
 python -m streamlit run app.py
 ```
+## Dashboard Preview
+
+![Credit Card Fraud Detection Dashboard](assets/dashboard_1.png)
+
+### Evaluation Note
+
+The test set was used during earlier exploratory comparisons.
+Therefore, the final test metrics should be interpreted as an estimate
+of performance on this dataset rather than a completely independent
+confirmation of generalization.
+
+A future version should use a dedicated validation set for model
+selection and reserve the test set for one final evaluation.
 
 ## Limitations
 
