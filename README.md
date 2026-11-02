@@ -2,7 +2,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
 ![Dashboard](https://img.shields.io/badge/Dashboard-Streamlit-red)
-![Project Status](https://img.shields.io/badge/Status-In-progress-orange)
+![Project Status](https://img.shields.io/badge/Status-Completed-green)
 
 A machine learning project that explores credit card transaction data, addresses class imbalance using SMOTE, trains classification models, and evaluates a Random Forest fraud detection model.
 
