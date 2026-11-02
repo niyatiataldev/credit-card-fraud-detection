@@ -142,6 +142,7 @@ The dashboard is an analysis and evaluation dashboard. It is not a deployed real
 ```text
 credit-card-fraud-detection/
 ├── data/
+├── assests/
 ├── models/
 ├── notebooks/
 ├── app.py
